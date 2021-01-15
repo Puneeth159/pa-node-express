@@ -9,3 +9,15 @@ app.get('/', (req,res) =>{
 app.listen(port,()=>{
     console.log(`App listening at http://localhost:${port}`);
 })
+
+app.get('/about',(req,res)=>{
+    res.send("This is a about page.")
+})
+
+app.get('/help',(req,res)=>{
+    res.send("Ypu have reached the help page of Puneeth.")
+})
+
+app.get('/help/:topic',(req,res)=>{
+    res.send(`This is a help page but you have entered ${req.params.topic}`)
+})
