@@ -15,7 +15,11 @@ app.get('/about',(req,res)=>{
 })
 
 app.get('/help',(req,res)=>{
-    res.send("Ypu have reached the help page of Puneeth.")
+    res.send("You have reached the help page of Puneeth.")
+})
+
+app.get('/contact',(req,res)=>{
+    res.send("You have reached the contact page of Puneeth.")
 })
 
 app.get('/help/:topic',(req,res)=>{
